@@ -69,9 +69,8 @@ The code for the web application is located in a separated repository [here](htt
 
 ### 이 밑에 installation guide 밑에 virtual environment 이게 가상환경만드는과정인데,,,
     git clone '여기링크'
- 해서 폴더 전체 다운로드 받고
     conda create --name leaf --file packagelist.txt
- 해서 가상환경 만들고 테스트해보시오
+ 요러케 해서 가상환경 만들고 테스트해보시오
  
  
 ## Installation guide
