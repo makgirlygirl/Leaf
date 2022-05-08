@@ -1,4 +1,3 @@
-
 # Leaf: Multiple-Choice Question Generation
 
 Easy to use and understand multiple-choice question generation algorithm using  [T5 Transformers](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html).  The application accepts a short passage of text and uses two fine-tuned T5 Transformer models to first generate multiple **question-answer pairs** corresponding to the given text, after which it uses them to generate ***distractors***  -  additional options used to confuse the test taker.
@@ -68,7 +67,13 @@ The code for the web application is located in a separated repository [here](htt
 
 
 
-
+### 이 밑에 installation guide 밑에 virtual environment 이게 가상환경만드는과정인데,,,
+    git clone '여기링크'
+ 해서 폴더 전체 다운로드 받고
+    conda create --name leaf --file packagelist.txt
+ 해서 가상환경 만들고 테스트해보시오
+ 
+ 
 ## Installation guide
 
 ### Creating a virtual environment *(optional)*
