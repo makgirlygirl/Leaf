@@ -1,8 +1,11 @@
 import textwrap
+import warnings
+warnings.filterwarnings(action='ignore')
 
 from app.mcq_generation import MCQGenerator
 
 def show_result(generated: str, answer: str, context:str, original_question: str = ''):
+    print('show_result')
     
     print('Context:')
 
@@ -32,4 +35,9 @@ Oxygen was isolated by Michael Sendivogius before 1604, but it is commonly belie
 
 Common uses of oxygen include production of steel, plastics and textiles, brazing, welding and cutting of steels and other metals, rocket propellant, oxygen therapy, and life support systems in aircraft, submarines, spaceflight and diving.'''
 
-MCQ_Generator.generate_mcq_questions(context_oxygen, 10) 
+eng_test1='''Scientists use paradigms rather than believing them. The use of a paradigm in research typically addresses related problems by employing shared concepts, symbolic expressions, experimental and mathematical tools and procedures, and even some of the same theoretical statements. Scientists need only understand how to use these various elements in ways that others would accept. These elements of shared practice thus need not presuppose any comparable unity in scientists’ beliefs about what they are doing when they use them. Indeed, one role of a paradigm is to enable scientists to work successfully without having to provide a detailed account of what they are doing or what they believe about it. Thomas Kuhn noted that scientists “can agree in their identification of a paradigm without agreeing on, or even attempting to produce, a full interpretation or rationalization of it. Lack of a standard interpretation or of an agreed reduction to rules will not prevent a paradigm from guiding research.”'''
+eng_test2='''Philip Kitcher and Wesley Salmon have suggested that there are two possible alternatives among philosophical theories of explanation. One is the view that scientific explanation consists in the unification of broad bodies of phenomena under a minimal number of generalizations. According to this view, the (or perhaps, a) goal of science is to construct an economical framework of laws or generalizations that are capable of subsuming all observable phenomena. Scientific explanations organize and systematize our knowledge of the empirical world; the more economical the systematization, the deeper our understanding of what is explained. The other view is the causal/mechanical approach. According to it, a scientific explanation of a phenomenon consists of uncovering the mechanisms that produced the phenomenon of interest. This view sees the explanation of individual events as primary, with the explanation of generalizations flowing from them. That is, the explanation of scientific generalizations comes from the causal mechanisms that produce the regularities. 
+'''
+# MCQ_Generator.generate_mcq_questions(context_oxygen, 10)
+MCQ_Generator.generate_mcq_questions(eng_test2, 10)
+

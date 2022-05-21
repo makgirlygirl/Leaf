@@ -1,5 +1,7 @@
 from typing import List
 from nltk.tokenize import sent_tokenize
+# import nltk
+# nltk.download('punkt')
 import toolz
 
 from app.modules.duplicate_removal import remove_distractors_duplicate_with_correct_answer, remove_duplicates
@@ -39,10 +41,10 @@ class MCQGenerator():
         questions = self._generate_distractors(cleaned_text, questions)
         
         for question in questions:
-            print('-------------------')
-            print(question.answerText)
-            print(question.questionText)
-            print(question.distractors)
+            print('---------------------------------------------------------')
+            print('Q:           '+question.questionText)
+            print('A:           '+question.answerText)
+            print('distractors: '+str(question.distractors))
 
         return questions
 
